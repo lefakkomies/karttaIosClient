@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0833F08F1A979B9C002F7BBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833F08E1A979B9C002F7BBA /* main.m */; };
+		0833F0921A979B9C002F7BBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833F0911A979B9C002F7BBA /* AppDelegate.m */; };
+		0833F0951A979B9C002F7BBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833F0941A979B9C002F7BBA /* ViewController.m */; };
+		0833F0981A979B9C002F7BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0833F0961A979B9C002F7BBA /* Main.storyboard */; };
+		0833F09A1A979B9C002F7BBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0833F0991A979B9C002F7BBA /* Images.xcassets */; };
+		0833F09D1A979B9C002F7BBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0833F09B1A979B9C002F7BBA /* LaunchScreen.xib */; };
+		0833F0A91A979B9C002F7BBA /* karttaIosClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833F0A81A979B9C002F7BBA /* karttaIosClientTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0833F0A31A979B9C002F7BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0833F0811A979B9C002F7BBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0833F0881A979B9C002F7BBA;
+			remoteInfo = karttaIosClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0833F0891A979B9C002F7BBA /* karttaIosClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = karttaIosClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0833F08D1A979B9C002F7BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0833F08E1A979B9C002F7BBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0833F0901A979B9C002F7BBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0833F0911A979B9C002F7BBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0833F0931A979B9C002F7BBA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0833F0941A979B9C002F7BBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0833F0971A979B9C002F7BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0833F0991A979B9C002F7BBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0833F09C1A979B9C002F7BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0833F0A21A979B9C002F7BBA /* karttaIosClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = karttaIosClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0833F0A71A979B9C002F7BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0833F0A81A979B9C002F7BBA /* karttaIosClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = karttaIosClientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0833F0861A979B9C002F7BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0833F09F1A979B9C002F7BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0833F0801A979B9C002F7BBA = {
+			isa = PBXGroup;
+			children = (
+				0833F08B1A979B9C002F7BBA /* karttaIosClient */,
+				0833F0A51A979B9C002F7BBA /* karttaIosClientTests */,
+				0833F08A1A979B9C002F7BBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0833F08A1A979B9C002F7BBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0833F0891A979B9C002F7BBA /* karttaIosClient.app */,
+				0833F0A21A979B9C002F7BBA /* karttaIosClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0833F08B1A979B9C002F7BBA /* karttaIosClient */ = {
+			isa = PBXGroup;
+			children = (
+				0833F0901A979B9C002F7BBA /* AppDelegate.h */,
+				0833F0911A979B9C002F7BBA /* AppDelegate.m */,
+				0833F0931A979B9C002F7BBA /* ViewController.h */,
+				0833F0941A979B9C002F7BBA /* ViewController.m */,
+				0833F0961A979B9C002F7BBA /* Main.storyboard */,
+				0833F0991A979B9C002F7BBA /* Images.xcassets */,
+				0833F09B1A979B9C002F7BBA /* LaunchScreen.xib */,
+				0833F08C1A979B9C002F7BBA /* Supporting Files */,
+			);
+			path = karttaIosClient;
+			sourceTree = "<group>";
+		};
+		0833F08C1A979B9C002F7BBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0833F08D1A979B9C002F7BBA /* Info.plist */,
+				0833F08E1A979B9C002F7BBA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0833F0A51A979B9C002F7BBA /* karttaIosClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				0833F0A81A979B9C002F7BBA /* karttaIosClientTests.m */,
+				0833F0A61A979B9C002F7BBA /* Supporting Files */,
+			);
+			path = karttaIosClientTests;
+			sourceTree = "<group>";
+		};
+		0833F0A61A979B9C002F7BBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0833F0A71A979B9C002F7BBA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0833F0881A979B9C002F7BBA /* karttaIosClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0833F0AC1A979B9C002F7BBA /* Build configuration list for PBXNativeTarget "karttaIosClient" */;
+			buildPhases = (
+				0833F0851A979B9C002F7BBA /* Sources */,
+				0833F0861A979B9C002F7BBA /* Frameworks */,
+				0833F0871A979B9C002F7BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = karttaIosClient;
+			productName = karttaIosClient;
+			productReference = 0833F0891A979B9C002F7BBA /* karttaIosClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0833F0A11A979B9C002F7BBA /* karttaIosClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0833F0AF1A979B9C002F7BBA /* Build configuration list for PBXNativeTarget "karttaIosClientTests" */;
+			buildPhases = (
+				0833F09E1A979B9C002F7BBA /* Sources */,
+				0833F09F1A979B9C002F7BBA /* Frameworks */,
+				0833F0A01A979B9C002F7BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0833F0A41A979B9C002F7BBA /* PBXTargetDependency */,
+			);
+			name = karttaIosClientTests;
+			productName = karttaIosClientTests;
+			productReference = 0833F0A21A979B9C002F7BBA /* karttaIosClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0833F0811A979B9C002F7BBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Leif Roschier";
+				TargetAttributes = {
+					0833F0881A979B9C002F7BBA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					0833F0A11A979B9C002F7BBA = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 0833F0881A979B9C002F7BBA;
+					};
+				};
+			};
+			buildConfigurationList = 0833F0841A979B9C002F7BBA /* Build configuration list for PBXProject "karttaIosClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0833F0801A979B9C002F7BBA;
+			productRefGroup = 0833F08A1A979B9C002F7BBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0833F0881A979B9C002F7BBA /* karttaIosClient */,
+				0833F0A11A979B9C002F7BBA /* karttaIosClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0833F0871A979B9C002F7BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0833F0981A979B9C002F7BBA /* Main.storyboard in Resources */,
+				0833F09D1A979B9C002F7BBA /* LaunchScreen.xib in Resources */,
+				0833F09A1A979B9C002F7BBA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0833F0A01A979B9C002F7BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0833F0851A979B9C002F7BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0833F0951A979B9C002F7BBA /* ViewController.m in Sources */,
+				0833F0921A979B9C002F7BBA /* AppDelegate.m in Sources */,
+				0833F08F1A979B9C002F7BBA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0833F09E1A979B9C002F7BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0833F0A91A979B9C002F7BBA /* karttaIosClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0833F0A41A979B9C002F7BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0833F0881A979B9C002F7BBA /* karttaIosClient */;
+			targetProxy = 0833F0A31A979B9C002F7BBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0833F0961A979B9C002F7BBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0833F0971A979B9C002F7BBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0833F09B1A979B9C002F7BBA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0833F09C1A979B9C002F7BBA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0833F0AA1A979B9C002F7BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0833F0AB1A979B9C002F7BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0833F0AD1A979B9C002F7BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = karttaIosClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0833F0AE1A979B9C002F7BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = karttaIosClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0833F0B01A979B9C002F7BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = karttaIosClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/karttaIosClient.app/karttaIosClient";
+			};
+			name = Debug;
+		};
+		0833F0B11A979B9C002F7BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = karttaIosClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/karttaIosClient.app/karttaIosClient";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0833F0841A979B9C002F7BBA /* Build configuration list for PBXProject "karttaIosClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0833F0AA1A979B9C002F7BBA /* Debug */,
+				0833F0AB1A979B9C002F7BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0833F0AC1A979B9C002F7BBA /* Build configuration list for PBXNativeTarget "karttaIosClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0833F0AD1A979B9C002F7BBA /* Debug */,
+				0833F0AE1A979B9C002F7BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0833F0AF1A979B9C002F7BBA /* Build configuration list for PBXNativeTarget "karttaIosClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0833F0B01A979B9C002F7BBA /* Debug */,
+				0833F0B11A979B9C002F7BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0833F0811A979B9C002F7BBA /* Project object */;
+}
