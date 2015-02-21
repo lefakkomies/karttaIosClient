@@ -15,6 +15,8 @@
 		0833F09D1A979B9C002F7BBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0833F09B1A979B9C002F7BBA /* LaunchScreen.xib */; };
 		0833F0A91A979B9C002F7BBA /* karttaIosClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833F0A81A979B9C002F7BBA /* karttaIosClientTests.m */; };
 		0833F0B31A97DF43002F7BBA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0833F0B21A97DF43002F7BBA /* CoreLocation.framework */; };
+		0833F0B61A991133002F7BBA /* ngKarttaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833F0B51A991133002F7BBA /* ngKarttaModel.m */; };
+		0833F0B91A99265C002F7BBA /* InConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833F0B81A99265C002F7BBA /* InConnectionViewController.m */; };
 		57929E39521E765E44F8B22B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 434EC93404121CF19AFF5026 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,10 @@
 		0833F0A71A979B9C002F7BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0833F0A81A979B9C002F7BBA /* karttaIosClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = karttaIosClientTests.m; sourceTree = "<group>"; };
 		0833F0B21A97DF43002F7BBA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0833F0B41A991133002F7BBA /* ngKarttaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ngKarttaModel.h; sourceTree = "<group>"; };
+		0833F0B51A991133002F7BBA /* ngKarttaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ngKarttaModel.m; sourceTree = "<group>"; };
+		0833F0B71A99265C002F7BBA /* InConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InConnectionViewController.h; sourceTree = "<group>"; };
+		0833F0B81A99265C002F7BBA /* InConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InConnectionViewController.m; sourceTree = "<group>"; };
 		17F227C7D6565D43E92A0B3B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		434EC93404121CF19AFF5026 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE8D3B19FE377A1B833F106 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +101,10 @@
 				0833F0911A979B9C002F7BBA /* AppDelegate.m */,
 				0833F0931A979B9C002F7BBA /* ViewController.h */,
 				0833F0941A979B9C002F7BBA /* ViewController.m */,
+				0833F0B71A99265C002F7BBA /* InConnectionViewController.h */,
+				0833F0B81A99265C002F7BBA /* InConnectionViewController.m */,
+				0833F0B41A991133002F7BBA /* ngKarttaModel.h */,
+				0833F0B51A991133002F7BBA /* ngKarttaModel.m */,
 				0833F0961A979B9C002F7BBA /* Main.storyboard */,
 				0833F0991A979B9C002F7BBA /* Images.xcassets */,
 				0833F09B1A979B9C002F7BBA /* LaunchScreen.xib */,
@@ -287,9 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0833F0B91A99265C002F7BBA /* InConnectionViewController.m in Sources */,
 				0833F0951A979B9C002F7BBA /* ViewController.m in Sources */,
 				0833F0921A979B9C002F7BBA /* AppDelegate.m in Sources */,
 				0833F08F1A979B9C002F7BBA /* main.m in Sources */,
+				0833F0B61A991133002F7BBA /* ngKarttaModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

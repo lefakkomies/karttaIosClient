@@ -7,23 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SIOSocket/SIOSocket.h>
-#import <CoreLocation/CoreLocation.h>
+#import "ngKarttaModel.h"
 
-@interface ViewController : UIViewController < CLLocationManagerDelegate>
+@class ngKarttaModel;
 
-@property (weak, nonatomic) IBOutlet UITextField *chatMessage;
+@interface ViewController : UIViewController 
+{
+ngKarttaModel *sharedKarttaModel;
+}
+//@property (weak, nonatomic) IBOutlet UITextField *chatMessage;
 
 @property (weak, nonatomic) IBOutlet UITextField *serverAddress;
 @property (weak, nonatomic) IBOutlet UITextField *userName;
 @property (weak, nonatomic) IBOutlet UITextField *trackRoom;
 
-// socket
-@property SIOSocket *socket;
-@property (nonatomic, strong) NSString *socketID;
+// Reference to model
+@property (strong, nonatomic) IBOutlet ngKarttaModel *karttaModel;
 
-// for location tracking
-@property (nonatomic, strong) CLLocationManager *locationManager;
+
+
+
 
 
 @end
