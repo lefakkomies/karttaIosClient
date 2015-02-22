@@ -19,7 +19,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *trackRoom;
 
 // Reference to model
-//@property (strong, nonatomic) IBOutlet ngKarttaModel *karttaModel;
 
 @property (weak, nonatomic) IBOutlet UIButton *enterTrackRoomButton;
 

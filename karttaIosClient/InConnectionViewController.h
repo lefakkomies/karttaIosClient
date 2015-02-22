@@ -11,9 +11,7 @@
 
 @class ngKarttaModel;
 
-@interface InConnectionViewController : UIViewController <ngKarttaModelDelegate> {
-ngKarttaModel *sharedKarttaModel;
-}
+@interface InConnectionViewController : UIViewController <ngKarttaModelDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *chatMessage;
 

@@ -9,7 +9,9 @@
 #import "InConnectionViewController.h"
 
 @interface InConnectionViewController ()
-
+{
+    ngKarttaModel *sharedKarttaModel;
+}
 @end
 
 @implementation InConnectionViewController
@@ -38,7 +40,9 @@
 */
 
 -(void) dealloc {
-    sharedKarttaModel.delegate = nil; // remove delegate
+    if (sharedKarttaModel.delegate == self) {
+        sharedKarttaModel.delegate = nil; // remove delegate
+    }
 }
 
 - (IBAction)sendChatMessage:(id)sender {

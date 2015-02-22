@@ -68,7 +68,12 @@
     [sharedKarttaModel checkOkToEnterTrackRoom];
 }
 
-
+# pragma mark Cleanup
+-(void) dealloc {
+    if (sharedKarttaModel.delegate == self) {
+        sharedKarttaModel.delegate = nil; // remove delegate
+    }
+}
 
 
 @end

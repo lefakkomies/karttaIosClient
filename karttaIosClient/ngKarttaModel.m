@@ -39,19 +39,20 @@
         
         // Create the location manager if this object does not
         // already have one.
-        if (nil == _locationManager)
+        if (nil == _locationManager) {
             _locationManager = [[CLLocationManager alloc] init];
-        self.locationManager.delegate = self;
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        }
+        _locationManager.delegate = self;
+        _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         
         // Set a movement threshold for new events.
-        self.locationManager.distanceFilter = 5; // meters
+        _locationManager.distanceFilter = 5; // meters
         
         [_locationManager startUpdatingLocation];
         if ([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
             [_locationManager requestWhenInUseAuthorization];
         }
-
+        
     }
     return self;
 }
@@ -100,23 +101,23 @@
  */
 -(void) checkOkToEnterTrackRoom {
     if (self.socket) {
-    NSLog(@"Checking if ok to enter trackroom");
-    [self.socket emit: @"kEnterTrackRoomOK" args: @[@{
-                                             @"name" : _userName,
-                                             @"trackroom" : _trackRoom
-                                             }]];
-
-    [self.socket on: @"kEnterTrackRoomOK" callback: ^(SIOParameterArray *args)
-     {
-         NSDictionary *response = [args firstObject];
-         NSLog(@"Response from 'kEnterTrackRoomOK' ");
-         NSLog(@"%@",response);
-         if ([response[@"okToEnter"]  isEqual: @YES]) {
-             NSLog(@"OK to enter");
-         } else {
-             NSLog(@"Not OK to enter");
-         }
-     }];
+        NSLog(@"Checking if ok to enter trackroom");
+        [self.socket emit: @"kEnterTrackRoomOK" args: @[@{
+                                                            @"name" : _userName,
+                                                            @"trackroom" : _trackRoom
+                                                            }]];
+        
+        [self.socket on: @"kEnterTrackRoomOK" callback: ^(SIOParameterArray *args)
+         {
+             NSDictionary *response = [args firstObject];
+             NSLog(@"Response from 'kEnterTrackRoomOK' ");
+             NSLog(@"%@",response);
+             if ([response[@"okToEnter"]  isEqual: @YES]) {
+                 NSLog(@"OK to enter");
+             } else {
+                 NSLog(@"Not OK to enter");
+             }
+         }];
     } else {
         NSLog(@"Trying to check ok without connection socket");
     }
@@ -132,7 +133,6 @@
                                              @"trackroom" : _trackRoom,
                                              @"id" : _socketID
                                              }]];
-    
 }
 
 
@@ -151,14 +151,14 @@
               location.coordinate.longitude);
     }
     if (self.socket) {
-    [self.socket emit: @"kPosUpdate" args: @[@{@"text" : @"This is message",
-                                               @"type" : @"textMessage",
-                                               @"name" : _userName,
-                                               @"id" : _socketID,
-                                               @"trackroom" : _trackRoom,
-                                               @"latitude" : @(location.coordinate.latitude),
-                                               @"longitude" : @(location.coordinate.longitude)
-                                               }]];
+        [self.socket emit: @"kPosUpdate" args: @[@{@"text" : @"This is message",
+                                                   @"type" : @"textMessage",
+                                                   @"name" : _userName,
+                                                   @"id" : _socketID,
+                                                   @"trackroom" : _trackRoom,
+                                                   @"latitude" : @(location.coordinate.latitude),
+                                                   @"longitude" : @(location.coordinate.longitude)
+                                                   }]];
         // test delegate
         //[_delegate ngKarttaModelConnectionUpdate:self];
         
