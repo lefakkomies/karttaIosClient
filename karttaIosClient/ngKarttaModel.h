@@ -6,20 +6,26 @@
 //  Copyright (c) 2015 Leif Roschier. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <SIOSocket/SIOSocket.h>
-#import <CoreLocation/CoreLocation.h>
+@import Foundation;
+@import CoreLocation;
 @import UIKit;
 
 
 @class SIOSocket;
 @class ngKarttaModel;
-
+/*
+ * Protocol for ngKarttaModel delegate for getting updates
+ */
 @protocol ngKarttaModelDelegate <NSObject>
 @optional
+- (void) ngKarttaModelConnectedToServer: (ngKarttaModel *) sender;
 - (void) ngKarttaModelConnectionUpdate: (ngKarttaModel *) sender;
 @end
-
+/*
+ *  Main model: ngKarttaModel. Singular class for holding location
+ *  and socket.io info
+ */
 @interface ngKarttaModel : NSObject < CLLocationManagerDelegate>
 
 @property (nonatomic, retain) NSString *webAddress;
@@ -39,5 +45,5 @@
 
 - (void) connect;
 - (void) sendChatMessage: (NSString*) chatMessage;
-
+- (void) checkOkToEnterTrackRoom;
 @end

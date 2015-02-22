@@ -11,7 +11,7 @@
 
 @class ngKarttaModel;
 
-@interface ViewController : UIViewController 
+@interface ViewController : UIViewController <ngKarttaModelDelegate>
 {
 ngKarttaModel *sharedKarttaModel;
 }
@@ -24,8 +24,9 @@ ngKarttaModel *sharedKarttaModel;
 // Reference to model
 @property (strong, nonatomic) IBOutlet ngKarttaModel *karttaModel;
 
+@property (weak, nonatomic) IBOutlet UIButton *enterTrackRoomButton;
 
-
+-(void) ngKarttaModelConnectedToServer: (ngKarttaModel *) sender;
 
 
 

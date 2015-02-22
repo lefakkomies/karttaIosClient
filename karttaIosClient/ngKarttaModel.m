@@ -65,31 +65,61 @@
         NSLog(@"Connecting...");
         [SIOSocket socketWithHost: [NSString stringWithFormat:@"http://%@", _webAddress] response: ^(SIOSocket *socket) {
             self.socket = socket;
+            NSLog(@"Socket: %@",socket);
             __weak typeof(self) weakSelf = self;
-            // Connection callback
+            /*
+             * Connection callback
+             */
             self.socket.onConnect = ^()
             {
                 weakSelf.socketIsConnected = YES;
                 NSLog(@"Connected!");
+                // send id request emit
+                [weakSelf.socket emit: @"kID" args: @[@{@"id" : @"idRequest"}]];
+                // receive ID callback
+                [weakSelf.socket on: @"kID" callback: ^(SIOParameterArray *args)
+                 {
+                     weakSelf.socketID = [args firstObject];
+                     NSLog(@"Receive ID: %@", weakSelf.socketID);
+                 }];
+                [weakSelf.delegate ngKarttaModelConnectedToServer: weakSelf];
             };
-            // Disconnect callback
+            /*
+             * Disconnect callback
+             */
             self.socket.onDisconnect = ^()
             {
                 weakSelf.socketIsConnected = NO;
-                NSLog(@"Disonnected!");
+                NSLog(@"Disconnected!");
             };
-            
-            NSLog(@"%@",socket);
-            // send id request emit
-            [self.socket emit: @"kID" args: @[@{@"id" : @"idRequest"}]];
-            
-            // receive ID
-            [self.socket on: @"kID" callback: ^(SIOParameterArray *args)
-             {
-                 _socketID = [args firstObject];
-                 NSLog(@"Receive ID: %@", _socketID);
-             }];
         }];
+    }
+}
+
+/*
+ *   Check it is ok to enter room
+ */
+-(void) checkOkToEnterTrackRoom {
+    if (self.socket) {
+    NSLog(@"Checking if ok to enter trackroom");
+    [self.socket emit: @"kEnterTrackRoomOK" args: @[@{
+                                             @"name" : _userName,
+                                             @"trackroom" : _trackRoom
+                                             }]];
+
+    [self.socket on: @"kEnterTrackRoomOK" callback: ^(SIOParameterArray *args)
+     {
+         NSDictionary *response = [args firstObject];
+         NSLog(@"Response from 'kEnterTrackRoomOK' ");
+         NSLog(@"%@",response);
+         if ([response[@"okToEnter"]  isEqual: @YES]) {
+             NSLog(@"OK to enter");
+         } else {
+             NSLog(@"Not OK to enter");
+         }
+     }];
+    } else {
+        NSLog(@"Trying to check ok without connection socket");
     }
 }
 

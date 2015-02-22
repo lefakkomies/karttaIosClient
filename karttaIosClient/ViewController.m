@@ -19,6 +19,7 @@
     
     //  reference to model that has all logic related to location on socket
     sharedKarttaModel = [ngKarttaModel sharedKarttaModel];
+    sharedKarttaModel.delegate = self;
     
     // Do any additional setup after loading the view, typically from a nib.
 
@@ -28,8 +29,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
+#pragma mark ngKarttamodel delegates
+/*
+ * Called when connection server ok
+ */
+-(void) ngKarttaModelConnectedToServer: (ngKarttaModel *) sender {
+    _enterTrackRoomButton.enabled = YES;
+}
 
 #pragma mark unwind in segue
 - (IBAction)unwindToMainMenu:(UIStoryboardSegue*)sender
@@ -37,6 +43,14 @@
     UIViewController *sourceViewController = sender.sourceViewController;
     // Pull any data from the view controller which initiated the unwind segue.
 }
+
+/*
+ *  Connect to server
+ */
+- (IBAction)connectToServerPressed:(id)sender {
+    [sharedKarttaModel connect];
+}
+
 
 /*
  * Enter trackroom
@@ -47,7 +61,11 @@
     sharedKarttaModel.webAddress = _serverAddress.text;
     sharedKarttaModel.userName = _userName.text;
     sharedKarttaModel.trackRoom = _trackRoom.text;
-    [sharedKarttaModel connect];
+    
+    [sharedKarttaModel checkOkToEnterTrackRoom];
 }
+
+
+
 
 @end
