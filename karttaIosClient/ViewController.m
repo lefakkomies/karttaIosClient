@@ -9,7 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+{
+    ngKarttaModel *sharedKarttaModel;
+}
 @end
 
 @implementation ViewController
@@ -44,6 +46,7 @@
     // Pull any data from the view controller which initiated the unwind segue.
 }
 
+#pragma mark Callbacks from view
 /*
  *  Connect to server
  */

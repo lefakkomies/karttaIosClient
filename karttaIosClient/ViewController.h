@@ -12,17 +12,14 @@
 @class ngKarttaModel;
 
 @interface ViewController : UIViewController <ngKarttaModelDelegate>
-{
-ngKarttaModel *sharedKarttaModel;
-}
-//@property (weak, nonatomic) IBOutlet UITextField *chatMessage;
+
 
 @property (weak, nonatomic) IBOutlet UITextField *serverAddress;
 @property (weak, nonatomic) IBOutlet UITextField *userName;
 @property (weak, nonatomic) IBOutlet UITextField *trackRoom;
 
 // Reference to model
-@property (strong, nonatomic) IBOutlet ngKarttaModel *karttaModel;
+//@property (strong, nonatomic) IBOutlet ngKarttaModel *karttaModel;
 
 @property (weak, nonatomic) IBOutlet UIButton *enterTrackRoomButton;
 

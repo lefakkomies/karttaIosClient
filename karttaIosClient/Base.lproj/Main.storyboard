@@ -71,14 +71,12 @@
                     <navigationItem key="navigationItem" id="q9b-2G-p92"/>
                     <connections>
                         <outlet property="enterTrackRoomButton" destination="55Y-Cs-Uox" id="iEi-mC-i5w"/>
-                        <outlet property="karttaModel" destination="c7Q-DR-64R" id="ATx-y9-6WM"/>
                         <outlet property="serverAddress" destination="oA1-wh-mNS" id="fm5-Oj-q58"/>
                         <outlet property="trackRoom" destination="Fm6-XZ-zDO" id="qz5-dk-LCI"/>
                         <outlet property="userName" destination="Ink-xs-Hz9" id="WPu-t9-WIy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <customObject id="c7Q-DR-64R" customClass="ngKarttaModel"/>
             </objects>
             <point key="canvasLocation" x="26" y="356"/>
         </scene>
@@ -126,7 +124,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCn-mw-ppT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="zkR-ta-jjj" userLabel="Exit" sceneMemberID="exit"/>
-                <customObject id="Lzx-ln-gQk" customClass="ngKarttaModel"/>
             </objects>
             <point key="canvasLocation" x="458" y="356"/>
         </scene>

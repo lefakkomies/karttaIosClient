@@ -11,12 +11,11 @@
 
 @implementation ngKarttaModel
 
-// singleton according to http://www.galloway.me.uk/tutorials/singleton-classes/
-//
-// Class method to create the model once. Access to signlen via:
-//
-// ngKarttaModel *sharedKarttaModel = [ngKarttaModel sharedKarttaModel];
-//
+/* singleton according to http://www.galloway.me.uk/tutorials/singleton-classes/
+ *
+ * Class method to create the model once. Access to signlen via:
+ * ngKarttaModel *sharedKarttaModel = [ngKarttaModel sharedKarttaModel];
+ */
 + (id)sharedKarttaModel {
     static ngKarttaModel *sharedKarttaModel = nil;
     @synchronized(self) {
@@ -97,7 +96,7 @@
 }
 
 /*
- *   Check it is ok to enter room
+ *   Check if it is ok to enter room
  */
 -(void) checkOkToEnterTrackRoom {
     if (self.socket) {
@@ -161,7 +160,7 @@
                                                @"longitude" : @(location.coordinate.longitude)
                                                }]];
         // test delegate
-        [_delegate ngKarttaModelConnectionUpdate:self];
+        //[_delegate ngKarttaModelConnectionUpdate:self];
         
     }
 }
